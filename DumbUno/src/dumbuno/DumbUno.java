@@ -1,6 +1,6 @@
 //This is an Uno game simulation.
 //Created by James Vanderhyde, 30 September 2024
-//modified by Ahmad Abraham 24 October 2024
+//modified by Ahmad Abraham 28 October 2024
 
 package dumbuno;
 
@@ -43,6 +43,11 @@ public class DumbUno
         while (current.getData() > 1)
         {
             //Student implementation
+            current.setData(current.getData() - 1);
+            if (current.getData() == 1) {
+            }
+            printGame(startPlayer);
+            current = current.getNext();
         }
         System.out.println("I win!");
         
